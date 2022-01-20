@@ -4,6 +4,7 @@ import FirstSection from './modules/FirstSection'
 import MacbookImg from './img/macbook.png'
 import SecondSection from './modules/SecondSection';
 import ThirdSection from './modules/ThirdSection';
+import FourthSection from './modules/FourthSection';
 
 const Div = styled.div`
   font-family: 'Poppins',sans-serif;
@@ -44,6 +45,9 @@ function App() {
         </div>
         <div className="thirdSection">
           <ThirdSection />
+        </div>
+        <div className="fourthSection">
+          <FourthSection />
         </div>
       </Div>
     </main>
