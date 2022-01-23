@@ -43,7 +43,7 @@ const Div = styled.div`
             line-height: 2rem;
         }
         p{
-            width: 22em;
+            width: 19em;
             margin-top: 0;
             font-size: .9rem;
             line-height: 1.3rem;
@@ -76,10 +76,20 @@ const Div = styled.div`
         }
     }
 
+    @media screen and (min-width: 768px){
+        .head-content{
+            p{
+                width: 40em;
+            }
+            margin-bottom: 1em;
+        }
+    }
+
     @media screen and (min-width: 1024px){
 
         width: 1024px;
         margin: auto;
+
         .grid{
             grid-template-columns: 1fr .5fr;
             gap: 1em;

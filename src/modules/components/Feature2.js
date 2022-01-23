@@ -6,7 +6,7 @@ const Div = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 5em 0 3em;
+    margin: auto;
     width: fit-content;
     
 
@@ -27,6 +27,10 @@ const Div = styled.div`
                 padding-left: 0.6em;
                 font-size: 1rem;
             }
+
+            svg{
+                width: 2em;
+            }
         }
         .second-row{
             .desc{
@@ -38,7 +42,7 @@ const Div = styled.div`
     }
 
     @media screen and (min-width: 768px){
-        margin: 7em auto 2em;
+        margin: 2em auto;
         flex-direction: row;
         align-items: center;
         text-align: center;
@@ -60,10 +64,10 @@ const Div = styled.div`
 
     @media screen and (min-width: 1024px){
         
-        margin: 7em 0;
-        flex-direction: column;
+        margin: 7em auto;
         align-items: flex-start;
         text-align: left;
+        gap: 2em;
 
         .feature{
             .first-row{
@@ -81,7 +85,7 @@ const Div = styled.div`
     }
 `
 
-const Feature = ({feature}) => {
+const Feature2 = ({feature}) => {
     return (
         <Div>
             {
@@ -109,4 +113,4 @@ const Feature = ({feature}) => {
     )
 }
 
-export default Feature
+export default Feature2

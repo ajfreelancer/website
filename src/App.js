@@ -5,6 +5,11 @@ import MacbookImg from './img/macbook.png'
 import SecondSection from './modules/SecondSection';
 import ThirdSection from './modules/ThirdSection';
 import FourthSection from './modules/FourthSection';
+import FifthSection from './modules/FifthSection';
+import SixthSection from './modules/SixthSection';
+import SeventhSection from './modules/SeventhSection';
+import EigthSection from './modules/EigthSection';
+import Footer from './modules/Footer';
 
 const Div = styled.div`
   font-family: 'Poppins',sans-serif;
@@ -34,21 +39,18 @@ function App() {
   return (
     <main>
       <Div>
-        <div className="firstSection">
-          <FirstSection />
-        </div>
+        <FirstSection />
         <div className="macBookWrapper">
           <img src={MacbookImg} alt="" className="laptop" />
         </div>
-        <div className="secondSection">
-          <SecondSection />
-        </div>
-        <div className="thirdSection">
-          <ThirdSection />
-        </div>
-        <div className="fourthSection">
-          <FourthSection />
-        </div>
+        <SecondSection />
+        <ThirdSection />
+        <FourthSection />
+        <FifthSection />
+        <SixthSection />
+        <SeventhSection />
+        <EigthSection />
+        <Footer />
       </Div>
     </main>
   );
