@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import styled from 'styled-components';
 
 const Div = styled.div`
@@ -68,19 +68,42 @@ const Div = styled.div`
 
         .testimonial{
             width: 17em;
+            height: 10em;
         }
     }
 `
 
+let testimonialss = []
+
 const Testimonial = ({data}) => {
 
+    const [testimonials, setTestimonials] = useState([]);
+
+    useEffect( () => {
+        fetch('https://testimonialapi.toolcarton.com/api')
+        .then(response => response.json())
+        .then(data => {
+
+            for(let i=0; i<=3; i++){
+                let toBeAdded = {
+                    image: data[i].avatar,
+                    name: data[i].name,
+                    role: data[i].designation,
+                    desc: data[i].message
+                }
+                testimonialss.push(toBeAdded)
+                setTestimonials(...testimonials, toBeAdded)
+            }
+        });
+    })
+    
     return(
         <Div>
             {
-                data.map((val, key) => {
+                testimonialss.map((val, key) => {
                     let {image, name, role, desc} = val;
                     return(
-                        <div className="testimonial">
+                        <div className="testimonial" key={key}>
                             <div className="first-row">
                                 <img className="first-column" src={image} alt="" />
                                 <div className="second-column">

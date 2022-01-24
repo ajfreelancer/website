@@ -2,6 +2,7 @@ import React from 'react'
 import bgImage from '../img/Background.png'
 import styled from 'styled-components'
 import Header from './Header'
+// import "animate.css"
 
 const Div = styled.div`
     height: 680px;
@@ -83,8 +84,8 @@ const FirstSection = () => {
             <section className='container'>
                 <Header />
                 <div className="first-section-content">
-                    <h1>Supercharge your Symbols</h1>
-                    <p>Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.</p>  
+                    <h1 className='animate__animated animate__bounce'>Supercharge your Symbols</h1>
+                    <p className='animate__animated animate__bounce'>Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.</p>  
                     <div className='tryFreeCTA'>
                         Try For Free
                     </div>

@@ -126,7 +126,7 @@ const SecondSection = () => {
         <Div>
             <section>
                 <div className="grid">
-                    <div className='firstColumn'>
+                    <div className='firstColumn animate__animated animate__slideInLeft'>
                         <img className='whiteGraph' src={WhiteGraph} alt="white graph" />
                         <img className='blackGraph' src={BlackGraph} alt="black graph" />
                     </div>

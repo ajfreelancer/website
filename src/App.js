@@ -43,7 +43,7 @@ function App() {
         <div className="macBookWrapper">
           <img src={MacbookImg} alt="" className="laptop" />
         </div>
-        <SecondSection />
+        <SecondSection/>
         <ThirdSection />
         <FourthSection />
         <FifthSection />
